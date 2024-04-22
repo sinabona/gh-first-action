@@ -1,0 +1,11 @@
+name: First Workflow
+# Events which trigger the Workflow
+on: workflow_dispatch  # Event that waits for the user to manually start the workflow
+jobs: 
+ first-job: # non-reserved word
+  runs-on: ubuntu-latest
+  steps:
+   - name: Print greeting
+     run: echo "Hello World!"
+   - name: Print goodbye
+     run: echo "Done - bye!"
